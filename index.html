@@ -1,21 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="utf-8" />
-  <title>TomTran Strategy AI</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Open Graph -->
+  <title>TomTran Strategy AI</title>
+  <link rel="canonical" href="https://tomtran.io.vn/" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- ============ Open Graph ============ -->
+  <meta property="og:locale" content="vi_VN" />
+  <meta property="og:type" content="website" />
   <meta property="og:title" content="TomTran Strategy AI" />
   <meta property="og:description" content="Agent AI chiến lược & xuất báo cáo tự động" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://tomtrancorpstrategy.streamlit.app/" />
-  <meta property="og:image" content="https://raw.githubusercontent.com/huynkawa/Tomtran_corp_strategy/main/assets/thumbnail.jpg?v=7" />
+  <meta property="og:url" content="https://tomtran.io.vn/" />
+
+  <!--
+    Nếu custom domain (tomtran.io.vn) đã hoạt động ổn định HTTPS,
+    dùng URL dưới đây (bỏ dòng GitHub Pages phía dưới).
+  -->
+  <meta property="og:image" content="https://tomtran.io.vn/assets_thumbnail/thumbnail.jpg?v=2" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Redirect ngay sang app -->
-  <meta http-equiv="refresh" content="0; url=https://tomtrancorpstrategy.streamlit.app/">
+  <!--
+    Fallback: nếu custom domain CHƯA ổn định,
+    hãy dùng đường dẫn GitHub Pages này thay cho dòng og:image ở trên:
+    <meta property="og:image" content="https://huynkawa.github.io/tomtran_site/assets_thumbnail/thumbnail.jpg?v=2" />
+  -->
+
+  <!-- ============ Twitter Card ============ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TomTran Strategy AI" />
+  <meta name="twitter:description" content="Agent AI tư vấn chiến lược, bảo hiểm phi nhân thọ & xuất báo cáo tự động" />
+  <meta name="twitter:image" content="https://tomtran.io.vn/assets_thumbnail/thumbnail.jpg?v=2" />
+  <!-- Fallback Twitter (nếu cần):
+  <meta name="twitter:image" content="https://huynkawa.github.io/tomtran_site/assets_thumbnail/thumbnail.jpg?v=2" />
+  -->
+
+  <!-- Favicon: đặt file tại /assets_thumbnail/favicon.ico -->
+  <link rel="icon" href="https://tomtran.io.vn/assets_thumbnail/favicon.ico" />
+  <!-- Fallback favicon:
+  <link rel="icon" href="https://huynkawa.github.io/tomtran_site/assets_thumbnail/favicon.ico" />
+  -->
+
+  <!-- Redirect sang app (delay 3s để social crawler kịp đọc OG) -->
+  <meta http-equiv="refresh" content="3; url=https://tomtrancorpstrategy.streamlit.app/" />
+
+  <!-- Open Graph để lại một hình ảnh trong body cho trình duyệt thường -->
+  <style>
+    html, body { height: 100%; margin: 0; font-family: system-ui, Arial, sans-serif; }
+    .wrap {
+      min-height: 100%;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 24px;
+    }
+    .thumb { max-width: 680px; width: 100%; height: auto; border-radius: 12px; }
+    .hint { color: #666; margin-top: 12px; }
+    a.btn {
+      display: inline-block; margin-top: 16px; padding: 10px 16px;
+      border-radius: 10px; text-decoration: none; background: #0ea5e9; color: white;
+    }
+  </style>
 </head>
-<body></body>
+<body>
+  <div class="wrap">
+    <div>
+      <img class="thumb" src="./assets_thumbnail/thumbnail.jpg?v=2" alt="TomTran Strategy AI thumbnail" />
+      <div class="hint">Đang chuyển đến ứng dụng… Nếu không tự chuyển, bấm nút bên dưới.</div>
+      <p><a class="btn" href="https://tomtrancorpstrategy.streamlit.app/">Mở ứng dụng ngay</a></p>
+      <noscript>
+        JavaScript đang tắt — vui lòng bấm vào liên kết trên để mở ứng dụng.
+      </noscript>
+    </div>
+  </div>
+</body>
 </html>
